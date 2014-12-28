@@ -1,0 +1,38 @@
+#logotop{
+  height: 575%;
+  margin-top: -40px;
+}
+
+.navbar{
+  margin-top: 30px;
+}
+
+// .launch-container{
+//   postion: relative;
+//   background: #5c97ff;
+//   overflow: hidden;
+
+
+.launch-container:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background-image: url('roadinpines.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
