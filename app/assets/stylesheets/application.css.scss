@@ -1,3 +1,8 @@
+
+
+$body-bg:                                                   #d2d7d3;
+
+
 #logotop{
   height: 575%;
   margin-top: -40px;
@@ -6,12 +11,6 @@
 .navbar{
   margin-top: 30px;
 }
-
-// .launch-container{
-//   postion: relative;
-//   background: #5c97ff;
-//   overflow: hidden;
-
 
 .launch-container:before {
     content: ' ';
@@ -34,5 +33,22 @@
 }
 
 
+
+.center{
+  text-align: center;
+  background-color: none;
+}
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.jumbotron{
+  background-color: transparent;
+}
+.middle{
+ position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
