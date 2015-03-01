@@ -1,3 +1,5 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 
 $body-bg:                                                   #d2d7d3;
@@ -22,7 +24,7 @@ $body-bg:                                                   #d2d7d3;
     height: 100%;
     z-index: -1;
     opacity: 0.5;
-    background: image-url('roadinpines.jpg');
+    background: image-url("oadinpines.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
     -ms-background-size: cover;
@@ -39,8 +41,6 @@ $body-bg:                                                   #d2d7d3;
   background-color: none;
 }
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
 
 .jumbotron{
   background-color: transparent;
