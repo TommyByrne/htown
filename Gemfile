@@ -1,33 +1,52 @@
 source 'https://rubygems.org'
+ruby '2.1.5'
+gem 'rails', '4.1.8'
 
 
-gem 'rails', '4.2.0.rc2'
-gem 'sass-rails', '5.0.0.beta1'
-gem 'bootstrap-sass', '~> 3.3.1'
-gem 'autoprefixer-rails'
-gem 'uglifier', '2.5.3'
-gem 'coffee-rails', '4.1.0'
-gem 'jquery-rails', '4.0.0.beta2'
-gem 'turbolinks', '2.3.0'
-gem 'jbuilder',  '2.2.3'
-gem 'sdoc', '0.4.0', group: :doc
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+  gem 'puma'
+end
 
+group :development do
+  gem 'sqlite3'
+  gem 'spring'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'thin'
+end
 
 group :development, :test do
-  gem 'sqlite3', '1.3.9'
-  gem 'byebug', '3.4.0'
-  gem 'web-console', '2.0.0.beta3'
-  gem 'spring', '1.1.3'
+  gem 'rspec-rails', '~> 3.1.0'
+  gem 'factory_girl_rails', '~> 4.4.1'
 end
 
 group :test do
-  gem 'minitest-reporters', '1.0.5'
-  gem 'mini_backtrace', '0.1.3'
-  gem 'guard-minitest', '2.3.1'
+  gem 'faker', '~> 1.4.3'
+  gem 'capybara', '~> 2.4.3'
+  gem 'database_cleaner', '~> 1.3.0'
+  gem 'launchy', '~> 2.4.2'
+  gem 'selenium-webdriver', '~> 2.43.0'
 end
 
-group :production do
-  gem 'pg',  '0.17.1'
-  gem 'rails_12factor', '0.0.2'
+gem 'sass-rails', '~> 4.0.3'
+gem 'bootstrap-sass', '~>3.3.1'
+gem 'autoprefixer-rails'
+gem 'sprockets-rails'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.1.0'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'jbuilder', '~> 2.0'
+
+group :doc do
+  gem 'sdoc', require: false
 end
 
+gem 'devise'
+gem 'figaro'
+gem 'pundit'
+gem 'newrelic_rpm'
+gem 'simple_form'
+gem 'rack-timeout'
