@@ -1,9 +1,90 @@
-<div class="launch-container">
+<div class="logosplash">
+  <div class="logo">
+    <%= image_tag "logo.png", class: "img_responsive" %>
+  </div>
+  <div class="row">
+    <p class="intro-header">
+      Bringing you <strong>Trailhead Savings</strong> Fall 2015!
+    </p>
+    <div class="col-md-4 col-md-offset-4">
+      <p class="intro-q fancy"><span> "Helping make Adventure more affordable one coupon at a time." </span></p>
+    </div>
+  </div>
 </div>
 
-<div class="jumbotron center">
-  <h1> ARE YOU READY?</h1>
-    <h3> Find out the new way to enjoy adventure</h3>
-  <p>
-    <%= link_to "Explore", about_path , class: "btn btn-default btn-lg" %>
-  </p>
+  <div class="container">
+    <div class="row icons">
+      <div class="col-md-4">
+        <i class="fa fa-book fa-5x icon"></i>
+          <p class="icon-p">A qailty savings book, created with you in mind.
+          Printed at a convienent 5" x 8" size to allow you to take it with you on the go.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fa fa-money fa-5x icon"></i>
+          <p class="icon-p">The savings you wish you had all along.  Unlike most coupon books this is aimed exclusivly at the adenture seeker in all of us. </p>
+      </div>
+      <div class="col-md-4">
+        <i class="fa fa-tree fa-5x icon"></i>
+          <p class="icon-p">Save money while saving the environment. A Portion of all proceeds will be donated to local conservation groups you can vote on.</p>
+      </div>
+    </div>
+  </div>
+
+<div class="line"></div>
+
+<div class="container">
+  <p class="location"><i class="fa fa-map-marker fa-fw map"></i> Where to Save?</p>
+  <%= image_tag "WI.png", class: "state" %>
+</div>
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <p class="book-info">
+      We are spreading the word all across Wisconsin and a little beyond to make sure the value found within this book is beneficial to everyone.
+      Our goal is for every adventure seeker to find a way to save on the things they love.
+    </p>
+  </div>
+</div>
+
+<div class="lineb"></div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <p class="help">
+      Help us help you, if you have a store or a activty that
+      you would like to see in this book reach out let us know and we will work hard to make it happen.
+    </p>
+    <div class="mail">
+      <a href="mailto:jim@hometownadventure.com">
+        <i class="fa fa-envelope fa-5x"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="lineb"></div>
+
+<div class="container">
+  <form action="//hometownadventure.us9.list-manage.com/subscribe/post?u=d0ea7fb74ca9898832d767d08&amp;id=e39e6734f6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div class="row">
+      <p class="subscribe"><strong>Sign up for updates</strong></p>
+      <p class="mailer">Be the first to know what Hometown Adventure is up to.
+        Updates on the book and everything else that we are working on to help keep you outside where happiness comes from.
+      </p>
+    </div>
+    <div class="input-group sub-input">
+      <input type="email" placeholder=" Enter Email Here" name="EMAIL" class="email-sign">
+    </div>
+          <p class="sub-f">Hometown Adventure will only email when big things are happening and never spam your email address.</p>
+      <div style="position: absolute; left: -5000px;"><input type="text" name="b_d0ea7fb74ca9898832d767d08_e39e6734f6" tabindex="-1" value=""></div>
+        <input type="submit" value="Sign Me Up!" name="subscribe" class="btn btn-warning btn-lg sub-btn "></div>
+  </form>
+</div>
+
+  <div class="social">
+    <%= link_to "https://www.facebook.com/135319613304223", target: '_blank' do %>
+      <i class="fa fa-facebook fa-3x s-icon"></i>
+    <% end %>
+    <%= link_to "https://twitter.com/htADVENTURE", target: '_blank' do %>
+      <i class="fa fa-twitter fa-3x s-icon"></i>
+    <% end %>
+  </div>

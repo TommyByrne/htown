@@ -1,13 +1,17 @@
 <% provide(:title, "Help") %>
-   <h1>Contact Us</h1>
+<div class="container">
+  <div class="center">
+    <p class="help-h">Contact Us</p>
+    <p class="help-p">
+      While things are under construction feel free to reach out with any thoughts, questions, or concerns. Or share with us your adventure stories, we would love to hear from you.
+    </p>
+    <div class="help-m">
+      Email:
+      <%= mail_to "tommy@hometownadventure.com", "Tommy" %> or
+      <%= mail_to "jim@hometownadventure.com", "Jim" %>
+    </div>
+    <div class="help-f">
 
-   <h3>
-     While things are under construction feel free to reach out with any thoughts, questions, or concerns. Or share with us your adventure stories.
-   </h3>
-
-   <h3>
-     <%= mail_to "tommy@hometownadventure" %>
-  </h3>
-  <h3>
-    <%= mail_to "jim@hometownadventure" %>
-  </h3>
+    </div>
+  </div>
+</div>
