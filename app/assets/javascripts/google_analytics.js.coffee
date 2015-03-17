@@ -38,5 +38,5 @@ class @GoogleAnalytics
 
   @analyticsId: ->
     # your google analytics ID(s) here...
-
+    Should not be visible?
 GoogleAnalytics.load()

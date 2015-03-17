@@ -25,4 +25,4 @@
 /public/assets/**
 
 #Ignore app assets google analytics
-/public/assets/google_analytics.js.coffee
+app/assets/javascripts/google_analytics.js.coffee
