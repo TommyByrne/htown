@@ -38,5 +38,6 @@ class @GoogleAnalytics
 
   @analyticsId: ->
     # your google analytics ID(s) here...
-    Should not be visible?
+    'UA-60825207-1'
+
 GoogleAnalytics.load()
