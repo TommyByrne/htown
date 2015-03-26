@@ -146,15 +146,12 @@ html body{
 
 .sub-input{
   margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .email-sign{
   height: 50px;
   width: 350px;
   font-size: 20pt;
-  padding-bottom: 10px;
 }
 
 
@@ -175,13 +172,16 @@ html body{
 }
 
 .social{
-  text-align: center;
-  margin-bottom: 50px;
+  background-color: #222222;
+  text-align: right;
+  width: 100%;
+
+  bottom: 0px;
 }
 
 .s-icon{
-  padding: 20px;
-  color: #5bccf5;
+  color: #FFFFFF;
+  padding: 10px;
 }
 
 //about//
